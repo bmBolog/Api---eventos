@@ -8,6 +8,8 @@ const router = Router();
 router.post("/", async (req: Request, res: Response) => {
   try {
     const { nome, email } = req.body;
+
+    
  
     // Verifica se os campos foram preenchidos
     if (!nome || !email) {
